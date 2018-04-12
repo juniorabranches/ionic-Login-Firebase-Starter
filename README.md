@@ -8,7 +8,11 @@ Starter of Ionic + Firebase + Authentication Login
 
 ![View this](imagens_git/FirebaseConfig.PNG)
 
-3)Still in Firebase, under Authentication> Login Method, enable: Email / password and Facebook
+3)Still in Firebase, under Authentication> Login Method, enable:
+
+- Email / password 
+
+- Facebook
 
 ![View this](imagens_git/FirebaseAuthentication.PNG)
 
