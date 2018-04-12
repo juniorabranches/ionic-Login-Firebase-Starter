@@ -1,0 +1,92 @@
+page-login {
+  $transparent-white: rgba(#009359, 0.79);
+  .toolbar-content,
+  span {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+  .toolbar-background,{
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  ion-footer {
+    height: 47px;
+  }
+  .footer {
+    text-align: center;
+    background: rgba(#009359, 0.79);
+    min-height: 47px;
+  }
+  .footer-md::before {
+    border-top: 1px solid $transparent-white;
+    background-image: none;
+  }
+
+  ion-content {
+    background: linear-gradient(316deg, transparentize(black, .15), #404654);
+    background-size: 1800% 1800%;
+    animation: gradient-effect 15s linear infinite;
+  }
+
+  @keyframes gradient-effect {
+    0% {
+      background-position: 0% 0%
+    }
+    50% {
+      background-position: 100% 100%
+    }
+    100% {
+      background-position: 0% 0%
+    }
+  }
+  // Content
+  .scroll-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .form {
+    padding-top: 200px;
+  }
+  .logo {
+    width: 80%;
+    height: auto;
+    padding-top: 0px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+  }
+  // Input items
+  ion-item {
+    border-radius: 3px !important;
+    padding-left: 10px !important;
+    margin-bottom: 15px !important;
+    //color: #fff !important;
+    background-color: rgba(#009359, 0.79)  !important;
+    font-size: 0.9em;
+  }
+   ::-webkit-input-placeholder {
+    color: white !important;
+  }
+  .item-inner {
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+  // --
+  .login-button {
+    text-transform: none;
+    border-radius: 3px !important;
+    color: #fff;
+    &.activated {
+      background-color: green !important;
+    }
+  }
+  // Facebook icon
+  ion-icon {
+    padding-right: 10px;
+    font-size: 2.2rem;
+  }
+
+}

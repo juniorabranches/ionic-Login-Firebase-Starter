@@ -1,0 +1,66 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen padding>
+
+
+  <form padding [formGroup]="signupForm" (submit)="signup()" novalidate>
+    <div class="strike">
+      <span>Dados Pessoais</span>
+    </div>
+    <br>
+
+    <ion-item>
+      <ion-input [(ngModel)]="firstName"
+                 formControlName="firstName"
+                 type="text"
+                 placeholder="Nome"
+                 clearInput clearOnEdit="false">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="lastName"
+                 formControlName="lastName"
+                 type="text"
+                 placeholder="Sobrenome"
+                 clearInput clearOnEdit="false">
+      </ion-input>
+    </ion-item>
+
+
+
+    <div class="strike">
+      <span>Dados de login</span>
+    </div>
+    <br>
+
+    <ion-item>
+      <ion-input [(ngModel)]="email"
+                 formControlName="email"
+                 type="email"
+                 placeholder="E-mail"
+                 clearInput clearOnEdit="false">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="password"
+                 formControlName="password"
+                 type="password"
+                 placeholder="Senha"
+                 clearInput clearOnEdit="false">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="passwordConfirm"
+                 formControlName="passwordConfirm"
+                 type="password"
+                 placeholder="Confirmar Senha"
+                 clearInput clearOnEdit="false">
+      </ion-input>
+    </ion-item>
+
+
+    <button ion-button block color="green" class="login-button">Criar Conta</button>
+  </form>
+</ion-content>

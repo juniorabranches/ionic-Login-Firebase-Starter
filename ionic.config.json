@@ -1,0 +1,8 @@
+{
+  "name": "login-fire-starter",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

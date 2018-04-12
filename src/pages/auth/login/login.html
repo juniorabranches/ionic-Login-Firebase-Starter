@@ -1,0 +1,35 @@
+<ion-content padding>
+  <div class="form" >
+	  <form padding [formGroup]="loginForm" (submit)="login()" novalidate>
+		<ion-item>
+		  <ion-input [(ngModel)]="email"
+					 formControlName="email"
+					 type="email"
+					 placeholder="E-mail"
+					 clearInput clearOnEdit="false">
+		  </ion-input>
+		</ion-item>
+		<ion-item>
+		  <ion-input [(ngModel)]="password"
+					 formControlName="password"
+					 type="password"
+					 placeholder="Senha"
+					 clearInput clearOnEdit="false">
+		  </ion-input>
+		</ion-item>
+		<button ion-button block color="green" class="login-button">Login</button>
+	  </form>
+	</div>
+  <div class="strike">
+    <span>OU</span>
+  </div>
+  <button ion-button block clear (click)="facebookLogin()" color="green" class="login-button"><ion-icon name="logo-facebook"></ion-icon> Login com Facebook</button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="footer">
+    <div (click)="goToSignup()">
+      <p>Você não tem uma conta? <strong>Cadastre-se aqui</strong>.</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>
