@@ -10,7 +10,7 @@ Starter of Ionic + Firebase + Authentication Login
 
 3)Still in Firebase, under Authentication> Login Method, enable:
 
-- Email / password 
+- Email / password
 
 - Facebook
 
@@ -26,17 +26,17 @@ Starter of Ionic + Firebase + Authentication Login
 
 1) Authentication Login with:
 
-1.1) Facebook
+- Facebook
 
-1.2) Email
+- Email
 
 2) Screens
 
-2.1) Login
+- Login
 
-2.2) Signup
+- Signup
 
-2.3) Home Page
+- Home Page
 
 (When you register, you will automatically log in every time you log in)
 
